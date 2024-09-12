@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ejercicio1_2 : MonoBehaviour
+public class Ejercicio2_6 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int puntos1, puntos2, puntos3;
+
     void Start()
     {
         
