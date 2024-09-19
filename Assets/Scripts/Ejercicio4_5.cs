@@ -28,14 +28,14 @@ public class Ejercicio4_5 : MonoBehaviour
         cuadrado=AreaCuadrado(lado);
 
 
-        string conversion = Convertir(radio, "Euro");
+        string conversion = Convertir(circulo, "Euro");
         Debug.Log(conversion);
        
-        //conversion = Convertir(triangulo, "Euro");
-        //Debug.Log(conversion);
+        conversion = Convertir(triangulo, "Euro");
+        Debug.Log(conversion);
         
-        //conversion = Convertir(cuadrado, "Euro");
-        //Debug.Log(conversion);
+        conversion = Convertir(cuadrado, "Euro");
+        Debug.Log(conversion);
 
     }
 
@@ -59,7 +59,7 @@ public class Ejercicio4_5 : MonoBehaviour
         double area = (lado * lado);
         return area;
     }
-    string Convertir(float cantidad, string moneda)
+    string Convertir(double cantidad, string moneda)
     {
         string resultado = "";
         //EURO 1 == DOLAR 1.11
