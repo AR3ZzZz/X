@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Ejercicio7_13 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] int numero;
+    int contador;
+    bool resultado;
     void Start()
     {
-        
+       resultado = NumeroPrimo(numero);
+        Debug.Log("Numero primo = " + resultado);
     }
 
-    // Update is called once per frame
-    void Update()
+    bool NumeroPrimo(int numero)
     {
-        
+        for (contador = numero - 1; contador >= 2; contador--)
+        {
+            Debug.Log(contador);
+            if (numero % contador == 0)
+            {
+                return false;
+            }
+            
+        }
+        return true;
     }
+
 }

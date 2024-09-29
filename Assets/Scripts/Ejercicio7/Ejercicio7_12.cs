@@ -8,21 +8,23 @@ public class Ejercicio7_12 : MonoBehaviour
     [SerializeField] int numero2;
     int resultado;
     int contador;
+    int suma;
     
     void Start()
     {
-        SumarTodosLosNumeros(numero1 , numero2);
+        suma = SumarTodosLosNumeros(numero1 , numero2);
+        Debug.Log("Resultadp final " + suma);
     }
 
     int SumarTodosLosNumeros(int numero1, int numero2)
     {
         for (contador = numero1; contador < numero2; contador++)
         {
-            
+            resultado += contador;
+            Debug.Log(resultado);
+
         }
-
-
-        return contador + numero2;
+        return resultado;
     }
 
     
